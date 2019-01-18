@@ -1,0 +1,62 @@
+// Define width and height properties
+@mixin size($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+// Define a pseudo element
+@mixin pseudo-element($content, $position, $top, $right, $bottom, $left) {
+	content: $content;
+	position: $position;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+}
+
+// Truncate text
+@mixin truncate($truncate-size) {
+	max-width: $truncate-size;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+// Align elements in center with table properties
+@mixin table-center {
+	display: table;
+	margin: 0 auto;
+}
+
+// Align elements in center with transform properties
+@mixin transform-center($position) {
+	position: $position;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+// Defines padding direction and apply size
+@mixin padding-size($direction, $size) {
+	@if $direction == 'all' {
+		padding: $size;
+	} @else if $direction == 'horizontal' {
+		padding-left: $size;
+		padding-right: $size;
+	} @else if $direction == 'vertical' {
+		padding-top: $size;
+		padding-bottom: $size;
+	}
+}
+
+// Defines margin direction and apply size
+@mixin margin-size($direction, $size) {
+	@if $direction == 'all' {
+		margin: $size;
+	} @else if $direction == 'horizontal' {
+		margin-left: $size;
+		margin-right: $size;
+	} @else if $direction == 'vertical' {
+		margin-top: $size;
+		margin-bottom: $size;
+	}
+}

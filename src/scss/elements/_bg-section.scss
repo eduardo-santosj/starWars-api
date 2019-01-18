@@ -1,0 +1,51 @@
+section{
+	min-height: 100vh;
+	&.escolha {
+		background: url('../img/escolha.jpg') no-repeat;
+		background-position: center center;
+		background-size: cover;
+		transition-delay: 3s;
+	}
+	
+	&.planets {
+		background: url('../img/planeta.jpg') no-repeat;
+		background-position: center center;
+		background-size: cover;
+		transition-delay: 3s;
+	}
+	
+	&.starships {
+		background: url('../img/nave-espacial.jpg') no-repeat;
+		background-position: center center;
+		background-size: cover;
+		transition-delay: 3s;
+	}
+	
+	&.vehicles {
+		background: url('../img/veiculos.jpg') no-repeat;
+		background-position: center center;
+		background-size: cover;
+		transition-delay: 3s;
+	}
+	
+	&.people {
+		background: url('../img/pessoa.jpg') no-repeat;
+		background-position: center center;
+		background-size: cover;
+		transition-delay: 3s;
+	}
+	
+	&.films {
+		background: url('../img/filmes.jpg') no-repeat;
+		background-position: center center;
+		background-size: cover;
+		transition-delay: 3s;
+	}
+	
+	&.species {
+		background: url('../img/especies.jpg') no-repeat;
+		background-position: center center;
+		background-size: cover;
+		transition-delay: 3s;
+	}	
+}

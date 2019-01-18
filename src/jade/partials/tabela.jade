@@ -1,0 +1,104 @@
+main 
+	section#bg.escolha
+		.container
+			h2.nome-escolha Star Wars
+
+
+			.jumbotron.text-center
+				.position-text
+					h3.escolha Escolha qual tema você quer:
+					select.form-control.btn-drop(id="tema")
+						option(value="escolha") Escolha...
+						option(value="planets") Planetas
+						option(value="starships") Naves Espaciais
+						option(value="vehicles") Veículos
+						option(value="people") Personagens
+						option(value="films") Filmes
+						option(value="species") Espécies
+
+			input(type="hidden" name="filtro" id="tema-filtro" placeholder="esconde o Filme")
+					
+				
+			#filtre.filtre
+				label(for="filtrar-tabela") Filtre Pelo Nome:
+				input(type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do que deseja")
+
+			h1#NomeEscolha.escolha Escolha...
+
+			.table-responsive
+				table#table-planeta.Planetas.table.table-bordered.table-hover
+					thead 
+						tr 
+							th Nome
+							th Período de Rotação
+							th Período Orbital
+							th Clima
+							th Terreno
+					
+					tbody(id="tabela-planeta")
+
+
+				table#table-naves.Planetas.table.table-bordered.table-hover
+					thead 
+						tr 
+							th Nome
+							th Modelo
+							th Fabricante
+							th Custo em Créditos
+							th Classe da Nave
+					
+					tbody(id="tabela-nave")
+
+				table#table-carros.Planetas.table.table-bordered.table-hover
+					thead 
+						tr 
+							th Nome
+							th Modelo
+							th Fabricante
+							th Custo em Créditos
+							th Classe da Nave
+					
+					tbody(id="tabela-carro")
+
+				
+				table#table-people.Planetas.table.table-bordered.table-hover
+					thead 
+						tr 
+							th Nome
+							th Cor do Cabelo
+							th Ano de Nascimento
+							th Gênero
+							th Filmes
+					
+					tbody(id="tabela-pessoa")
+
+
+				table#table-films.Planetas.table.table-bordered.table-hover
+					thead 
+						tr 
+							th Título
+							th Episodio
+							th Data de Lançamento
+							th Diretor
+							th Planetas
+					
+					tbody(id="tabela-filmes")
+
+
+				table#table-species.Planetas.table.table-bordered.table-hover
+					thead 
+						tr 
+							th Nome
+							th Idioma
+							th Designação
+							th Classificação
+							th Cores das Roupas
+					
+					tbody(id="tabela-especie")
+
+				
+			span.invisivel(id="erro-ajax") Erro ao buscar o que deseja
+			
+			button.botao.bto-principal(id="buscar-filme") Buscar
+				
+			

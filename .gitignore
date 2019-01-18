@@ -1,0 +1,9 @@
+# Folders
+node_modules/
+bower_components/
+public/
+dist/
+
+# Files
+.config.json
+config.json

@@ -1,0 +1,121 @@
+section {
+	h1 {
+		font-size: 3.9em;
+		display: block;
+		color: $yellow;
+		text-align: center;
+		padding-bottom: .55em;
+		margin-bottom: .55em;
+		font-family: $font-primary;
+		font-weight: 700;
+	}
+
+	h2{
+		font-size: 3.4em;
+		display: block;
+		padding-bottom: .5em;
+		border-bottom: 1px solid #ccc;
+		margin-bottom: .5em;
+		padding-top: 1em;
+		font-family: $font-primary;
+		font-weight: 700;
+		color: $yellow;
+	}
+	
+	h3 {
+		font-size: 3em;
+		display: block;
+		padding-bottom: .5em;
+		margin-bottom: .5em;
+		color: $black;
+		font-family: $font-secundary;
+		font-weight: 700;
+	}
+
+	.jumbotron {
+	background: rgba(255,255,255,.5)
+	}
+	
+	table{
+		width: 100%;
+		margin-bottom : .5em;
+		table-layout: fixed;
+		background-color: #fff;
+		display: none;
+	}
+	
+	td, th {
+		padding: .7em;
+		margin: 0;
+		border: 1px solid #ccc;
+		text-align: center;
+	}
+	
+	th{
+		font-weight: bold;
+		background-color: #EEE;
+		font-family: $font-secundary;
+	}
+
+	td{
+		font-family: $font-secundary;
+		font-weight: 400;
+		font-size: 1.2em;
+	}
+	
+	label{
+		color: #555;
+		display: block;
+		margin-bottom: .2em;
+		font-family: $font-secundary;
+		font-weight: 500;
+		font-size: 2em;
+		color: $yellow;
+	}
+	
+	.campo{
+		margin: 0;
+		padding-bottom: 1em;
+		width: 100%;
+		border: 1px solid #ccc;
+		padding: .7em;
+		width: 100%;
+	}
+	
+	.campo-medio{
+		display: inline-block;
+		padding-right: .5em;
+	}
+	
+	.grupo{
+		width: 32%;
+		display: inline-block;
+		padding: 10px 0px;
+	}
+
+	.botao,
+	.filtre {
+		display: none;
+	}
+
+	.fadeOut {
+		opacity: 0;
+		transition: 0.5s;
+	}
+	
+	#filtrar-tabela {
+		width: 200px;
+		height: 35px;
+		margin-bottom: 10px;
+	}
+	
+	.invisivel {
+		display: none;
+	}
+	
+	@media (max-width: 767px) {
+		.table {
+			width: auto;
+		}
+	}
+}
