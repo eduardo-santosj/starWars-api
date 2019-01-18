@@ -1,4 +1,4 @@
-# Landing Page - Banda Larga
+# Página API Star Wars
 
 ---
 
