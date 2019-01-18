@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="title" content=""/>
+    <meta name="description" content=""/>
+    <meta name="url" content=""/>
+    <meta name="theme-color" content="#000000"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:type" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:description" content=""/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Oswald:400,500,700" rel="stylesheet"/>
+    <title>Star Wars</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png"/>
+    <link rel="manifest" href="img/favicon/manifest.json"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <!-- if IE lte 9
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    -->
+    <!-- <![endif]-->
+  </head>
+  <body>
+    <header>
+      <div class="container"><img class="icon icon-star-wars"/>
+        <h2 class="titulo">Star Wars</h2>
+      </div>
+    </header>
+    <main> 
+      <section id="bg" class="escolha">
+        <div class="container">
+          <h2 class="nome-escolha">Star Wars</h2>
+          <div class="jumbotron text-center">
+            <div class="position-text">
+              <h3 class="escolha">Escolha qual tema você quer:</h3>
+              <select id="tema" class="form-control btn-drop">
+                <option value="escolha">Escolha...</option>
+                <option value="planets">Planetas</option>
+                <option value="starships">Naves Espaciais</option>
+                <option value="vehicles">Veículos</option>
+                <option value="people">Personagens</option>
+                <option value="films">Filmes</option>
+                <option value="species">Espécies</option>
+              </select>
+            </div>
+          </div>
+          <input type="hidden" name="filtro" id="tema-filtro" placeholder="esconde o Filme"/>
+          <div id="filtre" class="filtre">
+            <label for="filtrar-tabela">Filtre Pelo Nome:</label>
+            <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do que deseja"/>
+          </div>
+          <h1 id="NomeEscolha" class="escolha">Escolha...</h1>
+          <div class="table-responsive">
+            <table id="table-planeta" class="Planetas table table-bordered table-hover">
+              <thead> 
+                <tr> 
+                  <th>Nome</th>
+                  <th>Período de Rotação</th>
+                  <th>Período Orbital</th>
+                  <th>Clima</th>
+                  <th>Terreno</th>
+                </tr>
+              </thead>
+              <tbody id="tabela-planeta"></tbody>
+            </table>
+            <table id="table-naves" class="Planetas table table-bordered table-hover">
+              <thead> 
+                <tr> 
+                  <th>Nome</th>
+                  <th>Modelo</th>
+                  <th>Fabricante</th>
+                  <th>Custo em Créditos</th>
+                  <th>Classe da Nave</th>
+                </tr>
+              </thead>
+              <tbody id="tabela-nave"></tbody>
+            </table>
+            <table id="table-carros" class="Planetas table table-bordered table-hover">
+              <thead> 
+                <tr> 
+                  <th>Nome</th>
+                  <th>Modelo</th>
+                  <th>Fabricante</th>
+                  <th>Custo em Créditos</th>
+                  <th>Classe da Nave</th>
+                </tr>
+              </thead>
+              <tbody id="tabela-carro"></tbody>
+            </table>
+            <table id="table-people" class="Planetas table table-bordered table-hover">
+              <thead> 
+                <tr> 
+                  <th>Nome</th>
+                  <th>Cor do Cabelo</th>
+                  <th>Ano de Nascimento</th>
+                  <th>Gênero</th>
+                  <th>Filmes</th>
+                </tr>
+              </thead>
+              <tbody id="tabela-pessoa"></tbody>
+            </table>
+            <table id="table-films" class="Planetas table table-bordered table-hover">
+              <thead> 
+                <tr> 
+                  <th>Título</th>
+                  <th>Episodio</th>
+                  <th>Data de Lançamento</th>
+                  <th>Diretor</th>
+                  <th>Planetas</th>
+                </tr>
+              </thead>
+              <tbody id="tabela-filmes"></tbody>
+            </table>
+            <table id="table-species" class="Planetas table table-bordered table-hover">
+              <thead> 
+                <tr> 
+                  <th>Nome</th>
+                  <th>Idioma</th>
+                  <th>Designação</th>
+                  <th>Classificação</th>
+                  <th>Cores das Roupas</th>
+                </tr>
+              </thead>
+              <tbody id="tabela-especie"></tbody>
+            </table>
+          </div><span id="erro-ajax" class="invisivel">Erro ao buscar o que deseja</span>
+          <button id="buscar-filme" class="botao bto-principal">Buscar</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="text-footer">
+        <p> Simple and minimalist designed website using an <a href="https://swapi.co/" target="_blank">Star Wars API</a> to display some information about the movie franchise. Here you will find info from all seven Star Wars films. </p>
+      </div>
+    </footer>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="stylesheet" href="css/sprite.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
